@@ -11,6 +11,7 @@ import { ProjectsShowcaseSection } from "./sections/ProjectsShowcaseSection";
 import { ServicesOverviewSection } from "./sections/ServicesOverviewSection";
 import { TeamSection } from "./sections/TeamSection";
 import { TechnologyStackSection } from "./sections/TechnologyStackSection";
+import { Border } from "../../components/Index";
 
 export const AgenceEmaHomepage = (): JSX.Element => {
   // Client logos data
@@ -67,91 +68,58 @@ export const AgenceEmaHomepage = (): JSX.Element => {
 
   return (
     <div
-      className="bg-[#191919] flex flex-row justify-center w-full"
+      className="bg-[#191919] flex flex-col justify-center w-full"
       data-model-id="20:8"
     >
-      <div className="bg-[#191919] overflow-hidden w-full relative">
-        {/* Grid lines */}
-        <div className="relative w-full">
-          <Separator className="absolute w-px h-full top-0 left-[300px]" />
-          <Separator className="absolute w-px h-full top-0 left-[1620px]" />
-          <Separator className="absolute w-full h-px top-[149px] left-0" />
 
-          {/* Logo */}
-          <img
-            className="w-[150px] h-[150px] absolute top-[75px] left-[225px] object-cover"
-            alt="Ia ema"
-            src="https://c.animaapp.com/mc1n4zn94AUOLo/img/ia---ema-2-5.png"
-          />
+          <Border/>
 
           {/* Hero Section */}
-          <section className="w-full flex justify-center mt-[220px]">
-            <div className="flex flex-col md:flex-row w-full max-w-[2075px] relative">
+          <section className="w-full flex lg:flex-row flex-col gap-12 justify-between mt-[220px] p-12">
               {/* Left side with CTA */}
-              <div className="relative w-full md:w-[753px] py-16">
-                <div className="relative w-full h-full bg-[#191919] rounded-[376.5px/483.5px] border border-solid border-black blur-[100px]" />
-
-                <div className="relative mt-[611px] mx-auto">
-                  <Button className="w-[484px] h-[74px] rounded-[30px] shadow-[3px_3px_25px_#ff51d099] bg-gradient-to-r from-pink-500 to-purple-500">
-                    <span className="font-black text-white text-[35px]">
-                      Échanger avec nous
-                    </span>
-                  </Button>
-                </div>
+              <div className="flex flex-col gap-12 w-full max-w-[40rem]">
+                <h1 className="text-8xl font-bold"> VOTRE <span className="bg-main-gradient !bg-clip-text text-transparent">MVP</span> EN MOINS DE 30 JOURS.</h1>
+                <button className="bg-main-gradient py-3 w-fit text-xl font-bold rounded-2xl px-14 glow cursor-pointer hover:scale-105 transition-all">Échanger avec nous</button>
               </div>
 
               {/* Right side with illustration */}
-              <div className="relative w-full md:w-[1231px] mt-8 md:mt-[104px]">
-                <div className="relative w-full h-full">
-                  <div className="absolute w-[753px] h-[863px] top-0 right-0 bg-[#191919] rounded-[376.5px/431.5px] border border-solid border-black blur-[100px]" />
+              <div className="relative">
+                <div className="relative">
 
                   <img
-                    className="absolute w-[407px] h-[254px] top-[664px] left-[194px]"
+                    className="absolute w-[407px] h-[254px] top-[27rem] left-[194px]"
                     alt="Vector"
                     src="https://c.animaapp.com/mc1n4zn94AUOLo/img/vector-3.svg"
                   />
 
-                  <Card className="absolute w-[821px] h-[462px] top-[202px] left-[190px] bg-white rounded-[30px]">
+                  <Card className="relative w-full lg:w-[50rem] aspect-[1.8] bg-white rounded-[30px]">
                     <CardContent className="p-0"></CardContent>
                   </Card>
 
-                  <div className="absolute w-[380px] h-[100px] top-[907px] left-0 flex">
-                    {aiTools.map((tool, index) => (
-                      <img
-                        key={index}
-                        className="w-[100px] h-[100px]"
-                        style={{
-                          marginLeft: index > 0 ? `${index * 10}px` : "0",
-                        }}
-                        alt={tool.alt}
-                        src={tool.src}
-                      />
+                  <div className="absolute w-[380px] h-[100px] top-[40rem] left-0 flex">
+                   {aiTools.map((tool, index) => (
+                    <img
+                     key={index}
+                     className={`w-[100px] h-[100px] ${index !== 0 ? '-ml-6' : ''}`}
+                     alt={tool.alt}
+                     src={tool.src}
+                    />
                     ))}
                   </div>
+
                 </div>
               </div>
-            </div>
           </section>
 
           {/* Reduce deployment time section */}
-          <section className="w-full flex justify-center mt-16">
+          <section className="w-full flex justify-center mt-[25rem]">
             <div className="relative w-full max-w-[1146px] py-16">
-              <h2 className="text-[50px] font-black text-white text-center mb-[100px]">
+              <h2 className="text-[50px] font-black text-white text-center mb-[3rem]">
                 Réduisez vos temps de déploiement avec l&apos;ia.
               </h2>
 
-              <div className="flex flex-col md:flex-row gap-8">
-                <div className="relative">
-                  <img
-                    className="w-[462px] h-[330px] object-cover"
-                    alt="Design"
-                    src="https://c.animaapp.com/mc1n4zn94AUOLo/img/design-1.png"
-                  />
-                  <Separator className="w-0.5 h-[100px] mx-auto mt-4" />
-                </div>
-
-                <div className="relative">
-                  <div className="flex mb-8">
+              <div className="flex flex-col items-center">
+                <div className="flex">
                     <img
                       className="w-[301px] h-[333px]"
                       alt="Vector"
@@ -162,16 +130,22 @@ export const AgenceEmaHomepage = (): JSX.Element => {
                       alt="Vector"
                       src="https://c.animaapp.com/mc1n4zn94AUOLo/img/vector-1.svg"
                     />
-                  </div>
+                    </div>
+                  <div className="flex w-full justify-around gap-6">
+                  <img
+                    className="w-[462px] h-[330px] object-cover border border-amber-400 rounded-xl"
+                    alt="Design"
+                    src="https://c.animaapp.com/mc1n4zn94AUOLo/img/design-1.png"
+                  />
+                  
 
                   <img
-                    className="w-[465px] h-[332px] object-cover"
+                    className="w-[465px] h-[332px] object-cover border border-white rounded-xl"
                     alt="Dev"
                     src="https://c.animaapp.com/mc1n4zn94AUOLo/img/dev-1.png"
                   />
-                  <Separator className="w-0.5 h-[100px] mx-auto mt-4" />
-                </div>
-              </div>
+                  </div>
+            </div>
             </div>
           </section>
 
@@ -208,7 +182,5 @@ export const AgenceEmaHomepage = (): JSX.Element => {
           <ClientTestimonialsSection />
           <MainFooterSection />
         </div>
-      </div>
-    </div>
   );
 };

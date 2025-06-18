@@ -23,7 +23,9 @@
   --color-gradient-three:#00C3D9;
   --color-gradient-four:#F3631C;
 }
-
+.glow{
+  box-shadow: 0 0 12px var(--color-gradient-one);
+}
 .bg-main-gradient {
   background: linear-gradient(to right, var(--color-gradient-one), var(--color-gradient-two), var(--color-gradient-three), var(--color-gradient-four));
 }
