@@ -1,0 +1,1 @@
+export { MainFooterSection } from "./MainFooterSection";
