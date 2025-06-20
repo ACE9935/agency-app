@@ -23,22 +23,20 @@ export const TeamSection = (): JSX.Element => {
   ];
 
   return (
-    <section className="relative w-full py-16 flex flex-col items-start">
-      <div className="container mx-auto">
+    <section className="relative w-[80%] max-w-[1500px] p-16 flex flex-col items-start">
+        <img
+          className="absolute translate-y-[70%] translate-x-[-50%] top-0 left-0 w-[120px] h-[120px] object-cover"
+          alt="Ia ema"
+          src="https://c.animaapp.com/mc1n4zn94AUOLo/img/ia---ema-2-5.png"
+            />
         <div className="flex flex-col gap-8">
           <div className="flex items-start gap-4">
-            <img
-              className="w-[150px] h-[150px] object-cover"
-              alt="Ia ema"
-              src="https://c.animaapp.com/mc1n4zn94AUOLo/img/ia---ema-2-5.png"
-            />
-
-            <h2 className="mt-12 font-['Roboto',Helvetica] font-black text-white text-[45px]">
+            <h2 className="mt-12 font-['Roboto',Helvetica] font-black text-white text-[2.5rem]">
               L&apos;équipe
             </h2>
           </div>
 
-          <p className="font-['Roboto',Helvetica] font-black text-white text-xl max-w-[1142px]">
+          <p className="font-['Roboto',Helvetica] font-black text-white text-lg max-w-[1142px]">
             Ils sont jeunes, ils sont passionnés et surtout et sont à
             l&apos;affût des dernières évolutions techniques dans leurs domaines
             pour resté compétitifs jour après jour !
@@ -57,7 +55,6 @@ export const TeamSection = (): JSX.Element => {
               </Card>
             ))}
           </div>
-        </div>
       </div>
     </section>
   );

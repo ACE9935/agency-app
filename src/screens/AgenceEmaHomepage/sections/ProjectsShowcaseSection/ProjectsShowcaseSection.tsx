@@ -22,42 +22,45 @@ export const ProjectsShowcaseSection = (): JSX.Element => {
   ];
 
   return (
-    <section className="relative w-full py-20 overflow-hidden">
-      {/* Background blur effects */}
-      <div className="absolute w-[359px] h-[807px] top-0 left-[15%] bg-[#191919] rounded-[179.5px/403.5px] blur-[50px]" />
-      <div className="absolute w-[359px] h-[807px] top-0 right-[15%] bg-[#191919] rounded-[179.5px/403.5px] blur-[50px]" />
+    <section className="relative w-[80%] max-w-[1500px] p-16 flex flex-col items-center">
 
-      <div className="relative container mx-auto">
-        {/* Header with logo and title */}
-        <div className="flex items-center mb-16">
-          <img
-            className="w-[150px] h-[150px] object-cover mr-3"
-            alt="Ia ema"
-            src="https://c.animaapp.com/mc1n4zn94AUOLo/img/ia---ema-2-5.png"
-          />
-          <h2 className="font-black text-white text-[45px] [font-family:'Roboto',Helvetica]">
+         <img
+          className="absolute translate-y-[30%] translate-x-[-50%] top-0 left-0 w-[120px] h-[120px] object-cover"
+          alt="Ia ema"
+          src="https://c.animaapp.com/mc1n4zn94AUOLo/img/ia---ema-2-5.png"
+            />
+          <h2 className="font-black text-white text-[2.5rem] [font-family:'Roboto',Helvetica] self-start">
             Réalisations
           </h2>
-        </div>
 
         {/* Project cards */}
-        <div className="flex flex-wrap justify-center gap-8">
-          {projectCards.map((card) => (
-            <Card
-              key={card.id}
-              className="w-[781px] h-[441px] bg-transparent border-0"
-            >
-              <CardContent className="p-0">
-                <img
-                  className="w-full h-full"
-                  alt={card.alt}
-                  src={card.imageUrl}
-                />
-              </CardContent>
-            </Card>
-          ))}
+        <div className="flex flex-col mt-8 w-full max-w-[1000px]">
+          <img className="w-[350px] self-center" src="/project-vector1.png"/>
+          <div className="flex gap-6">
+          <img className="w-[450px] rounded-lg" src="/project-showcase.png"/>
+          <div className="bg-white rounded-full w-fit bg-main-gradient p-[0.1rem] h-fit">
+            <div className="bg-white px-5 py-1 rounded-full"><span className="bg-main-gradient !bg-clip-text text-transparent text-2xl font-bold">WEB</span></div>
+            </div>
+          </div>
+          <img className="w-[500px] self-center" src="/project-vector.png"/>
+          <div className="self-end flex flex-row-reverse gap-3">
+          <img className="w-[450px] rounded-lg" src="/project-showcase.png"/>
+           <div className="bg-white rounded-full w-fit bg-main-gradient p-[0.1rem] h-fit">
+            <div className="bg-white px-5 py-1 rounded-full"><span className="bg-main-gradient !bg-clip-text text-transparent text-2xl font-bold">SAAS</span></div>
+            </div>
+          </div>
+          <img
+  className="w-[500px] self-center"
+  src="/project-vector.png"
+  style={{ transform: 'rotateY(180deg)' }}
+/>
+<div className="flex gap-6">
+          <img className="w-[450px] rounded-lg" src="/project-showcase.png"/>
+          <div className="bg-white rounded-full w-fit bg-main-gradient p-[0.1rem] h-fit">
+            <div className="bg-white px-5 py-1 rounded-full"><span className="bg-main-gradient !bg-clip-text text-transparent text-2xl font-bold">APP</span></div>
+            </div>
+          </div>
         </div>
-      </div>
     </section>
   );
 };

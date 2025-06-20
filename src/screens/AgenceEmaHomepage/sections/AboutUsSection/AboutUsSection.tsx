@@ -11,7 +11,7 @@ export const AboutUsSection = (): JSX.Element => {
   ];
 
   return (
-    <section className="relative w-full py-16 flex justify-center">
+    <section className="relative px-6 py-16 flex justify-center w-[80%] max-w-[1500px]">
       <div className="w-full max-w-[1144px] flex flex-col items-end">
         {/* Vector graphic at the top */}
         <img
@@ -20,11 +20,11 @@ export const AboutUsSection = (): JSX.Element => {
           src="https://c.animaapp.com/mc1n4zn94AUOLo/img/vector-3-1.svg"
         />
 
-        <div className="flex w-full mt-4 gap-[121px]">
+        <div className="flex w-full gap-[121px]">
           {/* Left side - Image */}
           <div className="relative">
             <img
-              className="w-[400px] h-[510px]"
+              className="w-full min-w-[400px]"
               alt="Agency founder"
               src="https://c.animaapp.com/mc1n4zn94AUOLo/img/rectangle-12.svg"
             />
@@ -33,32 +33,19 @@ export const AboutUsSection = (): JSX.Element => {
           {/* Right side - Content */}
           <div className="flex flex-col max-w-[619px]">
             {/* Heading */}
-            <h2 className="font-['Roboto',Helvetica] font-black text-[45px] text-white mb-16">
+            <h2 className="font-['Roboto',Helvetica] font-black text-[2.5rem] text-white mb-16">
               L&apos;histoire de l&apos;agence
             </h2>
 
             {/* Story text */}
-            <div className="font-['Roboto',Helvetica] font-black text-white text-xl space-y-6">
+            <div className="font-['Roboto',Helvetica] font-black text-white text-lg space-y-6">
               {agencyStory.map((paragraph, index) => (
                 <p key={index}>{paragraph}</p>
               ))}
             </div>
 
             {/* CTA Button */}
-            <div className="mt-16">
-              <Card className="w-[486px] h-[74px] shadow-[3px_3px_25px_#ff51d099] rounded-[30px] bg-transparent border-0">
-                <CardContent className="p-0 h-full">
-                  <Button
-                    className="w-full h-full rounded-[30px] flex items-center justify-center"
-                    variant="default"
-                  >
-                    <span className="font-['Roboto',Helvetica] font-black text-white text-[35px]">
-                      Échanger avec moi
-                    </span>
-                  </Button>
-                </CardContent>
-              </Card>
-            </div>
+                    <button className="bg-main-gradient mt-8 py-2 w-fit text-xl font-bold rounded-2xl px-8 glow cursor-pointer hover:scale-105 transition-all">Échanger avec nous</button>
           </div>
         </div>
       </div>
