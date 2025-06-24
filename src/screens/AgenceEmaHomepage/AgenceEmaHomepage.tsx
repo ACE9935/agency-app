@@ -7,11 +7,9 @@ import { FrequentlyAskedQuestionsSection } from "./sections/FrequentlyAskedQuest
 import { MainFooterSection } from "./sections/MainFooterSection";
 import { OurServicesSection } from "./sections/OurServicesSection";
 import { ProjectsShowcaseSection } from "./sections/ProjectsShowcaseSection";
-import { ServicesOverviewSection } from "./sections/ServicesOverviewSection";
 import { TeamSection } from "./sections/TeamSection";
 import { TechnologyStackSection } from "./sections/TechnologyStackSection";
 import { Border } from "../../components/Index";
-import GeminiTrail from "../../components/GeminiTrail";
 
 export const AgenceEmaHomepage = (): JSX.Element => {
   // Client logos data
@@ -78,7 +76,7 @@ export const AgenceEmaHomepage = (): JSX.Element => {
           <section className="w-full relative">
               {/* Left side with CTA */}
               <div className="mt-[10rem] p-12 w-full relative flex lg:flex-row flex-col gap-12 justify-between">
-              <div className="flex flex-col gap-12 w-full max-w-[30rem]">
+              <div className="flex flex-col gap-12 w-full max-w-[30rem] bg-showcase pt-7">
                 <h1 className="text-6xl font-bold"> VOTRE <span className="bg-main-gradient !bg-clip-text text-transparent">MVP</span> EN MOINS DE 30 JOURS.</h1>
                 <button className="bg-main-gradient py-2 w-fit text-lg font-bold rounded-2xl px-8 glow cursor-pointer hover:scale-105 transition-all">Échanger avec nous</button>
               </div>
@@ -177,11 +175,12 @@ export const AgenceEmaHomepage = (): JSX.Element => {
           <TeamSection />
           <ProjectsShowcaseSection />
           <OurServicesSection />
-          <ServicesOverviewSection />
           <TechnologyStackSection />
-          <FrequentlyAskedQuestionsSection />
           <ClientTestimonialsSection />
+          <FrequentlyAskedQuestionsSection />
+          <div className="w-full h-1 border-t border-white"></div>
           <MainFooterSection />
+          <Border reverse/>
         </div>
   );
 };

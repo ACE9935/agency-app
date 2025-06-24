@@ -25,7 +25,7 @@ export const TeamSection = (): JSX.Element => {
   return (
     <section className="relative w-[80%] max-w-[1500px] p-16 flex flex-col items-start">
         <img
-          className="absolute translate-y-[70%] translate-x-[-50%] top-0 left-0 w-[120px] h-[120px] object-cover"
+          className="absolute translate-y-[125%] translate-x-[-50%] top-0 left-0 w-[80px] h-[80px] object-cover"
           alt="Ia ema"
           src="https://c.animaapp.com/mc1n4zn94AUOLo/img/ia---ema-2-5.png"
             />

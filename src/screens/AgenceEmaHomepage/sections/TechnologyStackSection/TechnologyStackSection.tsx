@@ -70,23 +70,28 @@ export const TechnologyStackSection = (): JSX.Element => {
   ];
 
   return (
-    <section className="w-full max-w-[1147px] mx-auto py-16">
-      <h2 className="font-['Roboto',Helvetica] font-black text-white text-[45px] mb-16">
-        Notre stack technique
-      </h2>
+    <section className="relative w-[80%] max-w-[1500px] p-16 flex flex-col">
+      <img
+        className="absolute translate-y-[125%] translate-x-[-50%] top-0 left-0 w-[80px] h-[80px] object-cover"
+        alt="Ia ema"
+        src="https://c.animaapp.com/mc1n4zn94AUOLo/img/ia---ema-2-5.png"
+      />
 
-      <Card className="w-full rounded-xl border-none relative min-h-[445px]">
-        <CardContent className="p-0">
+        <div className="flex flex-col gap-8">
+            <h2 className="mt-12 font-['Roboto',Helvetica] font-black text-white text-[2.5rem]">
+              Notre stack technique
+            </h2>
+        <div className="bg-main-gradient-reverse p-[0.1rem] rounded-lg self-center">
+          <div className="flex bg-primary rounded-lg p-6 grid grid-cols-2 xl:grid-cols-3 gap-12">
           {techCategories.map((category, index) => (
             <div
               key={index}
-              className="absolute"
               style={{
                 top: category.position.top,
                 left: category.position.left,
               }}
             >
-              <div className="bg-[linear-gradient(92deg,rgba(226,169,36,1)_0%,rgba(243,99,28,1)_100%)] [-webkit-background-clip:text] bg-clip-text [-webkit-text-fill-color:transparent] [text-fill-color:transparent] font-['Roboto',Helvetica] font-black text-transparent text-[35px] mb-4 relative">
+              <div className="bg-[linear-gradient(92deg,rgba(226,169,36,1)_0%,rgba(243,99,28,1)_100%)] [-webkit-background-clip:text] bg-clip-text [-webkit-text-fill-color:transparent] [text-fill-color:transparent] font-['Roboto',Helvetica] font-black text-transparent text-[1.5rem] mb-4 relative">
                 {category.name === "IA" && (
                   <img
                     className="w-4 h-4 absolute top-0 left-0 object-cover"
@@ -122,16 +127,18 @@ export const TechnologyStackSection = (): JSX.Element => {
               )}
             </div>
           ))}
-        </CardContent>
-      </Card>
+        </div>
+        </div>
+          </div>
 
-      <div className="flex justify-center mt-8">
+      <div className="flex ml-[12rem] 2xl:ml-[20rem]">
         <img
           className="w-[301px] h-80"
           alt="Vector graphic"
           src="https://c.animaapp.com/mc1n4zn94AUOLo/img/vector-2-1.svg"
         />
       </div>
+      <h2 className="text-[2rem] font-['Roboto',Helvetica] font-black text-center">Notre technique au service des vos <span className="bg-linear-to-r from-gradient-one to-blue-500 bg-clip-text text-transparent">idées</span></h2>
     </section>
   );
 };

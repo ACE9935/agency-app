@@ -1,5 +1,6 @@
 import React, { JSX } from "react";
 import { Button } from "../../../../components/ui/button";
+import { Border } from "../../../../components/Index";
 
 // Data for reusability
 const footerData = {
@@ -15,82 +16,27 @@ const footerData = {
 
 export const MainFooterSection = (): JSX.Element => {
   return (
-    <footer className="relative w-full py-12 bg-transparent text-white font-['Roboto',Helvetica]">
-      {/* Top section with separator */}
-      <div className="relative w-full h-[150px] mb-12">
-        <div className="relative w-full flex items-center justify-between">
-          <div className="flex items-center">
-            <img
-              className="w-[150px] h-[150px] object-cover"
-              alt="Agence Ema logo"
-              src={footerData.logoUrl}
-            />
-          </div>
+    <footer className="relative w-[80%] max-w-[1500px] p-16 flex flex-col">
 
-          <div className="absolute left-0 right-0 top-[74px]">
-            <img
-              className="w-full h-px object-cover"
-              alt="Footer separator"
-              src={footerData.separatorUrl}
-            />
-          </div>
-        </div>
-      </div>
+      <img
+        className="absolute translate-y-[-53%] translate-x-[-50%] top-0 left-0 w-[120px] h-[120px] object-cover"
+        alt="Ia ema"
+        src="https://c.animaapp.com/mc1n4zn94AUOLo/img/ia---ema-2-5.png"
+      />
+     
+      <h2 className="text-[45px] font-black mb-4">
+        {footerData.companyName}
+      </h2>
 
-      {/* Main content */}
-      <div className="flex flex-row justify-between px-[225px] mb-12">
-        {/* Left column */}
-        <div className="flex flex-col">
-          <h2 className="text-[45px] font-black mb-4">
-            {footerData.companyName}
-          </h2>
-        </div>
+      <div className="flex flex-col self-end mb-6">
 
         {/* Right column */}
         <div className="flex flex-col max-w-[474px]">
-          <p className="text-[35px] font-black mb-12">
+          <p className="text-[1.7rem] font-black mb-8">
             {footerData.contactText}
           </p>
 
-          <div className="self-end mt-auto">
-            <Button className="w-[484px] h-[74px] rounded-[30px] bg-transparent shadow-[3px_3px_25px_#ff51d099] hover:bg-transparent">
-              <span className="text-[35px] font-black text-white">
-                {footerData.contactButton}
-              </span>
-            </Button>
-          </div>
-        </div>
-      </div>
-
-      {/* Bottom section with copyright */}
-      <div className="relative w-full mt-12">
-        <div className="relative w-full h-[150px]">
-          <div className="absolute left-0 right-0 top-0">
-            <img
-              className="w-full h-px object-cover"
-              alt="Footer separator"
-              src={footerData.separatorUrl}
-            />
-          </div>
-
-          <div className="flex items-center justify-between px-[225px]">
-            <img
-              className="w-[150px] h-[150px] object-cover"
-              alt="Agence Ema logo"
-              src={footerData.logoUrl}
-            />
-
-            <img
-              className="w-[150px] h-[150px] object-cover"
-              alt="Agence Ema logo"
-              src={footerData.logoUrl}
-            />
-          </div>
-
-          <div className="flex justify-between px-[225px] mt-[66px]">
-            <div className="text-base font-black">{footerData.copyright}</div>
-            <div className="text-xl font-black">{footerData.legalLinks}</div>
-          </div>
+          <button className="bg-main-gradient py-2 w-fit text-lg font-bold rounded-2xl px-8 glow cursor-pointer hover:scale-105 transition-all">Échanger avec nous</button>
         </div>
       </div>
     </footer>
