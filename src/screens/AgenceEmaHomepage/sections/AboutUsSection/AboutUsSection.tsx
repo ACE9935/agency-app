@@ -11,20 +11,25 @@ export const AboutUsSection = (): JSX.Element => {
   ];
 
   return (
-    <section className="relative px-6 py-16 flex justify-center w-[80%] max-w-[1500px]">
+    <section className="relative px-6 md:px-16 py-16 flex justify-center w-[80%] max-w-[1500px]">
       <div className="w-full max-w-[1144px] flex flex-col items-end">
         {/* Vector graphic at the top */}
         <img
-          className="w-[372px] h-[254px] self-start ml-[199px]"
+          className="hidden lg:block w-[372px] h-[254px] self-start ml-[199px]"
           alt="Vector"
           src="https://c.animaapp.com/mc1n4zn94AUOLo/img/vector-3-1.svg"
         />
+        <img
+          className="block lg:hidden w-[0.1rem] h-[254px] object-cover self-start ml-[199px]"
+          alt="Vector"
+          src="Vector 3.png"
+        />
 
-        <div className="flex w-full gap-[121px]">
+        <div className="flex lg:flex-row flex-col w-full gap-[121px]">
           {/* Left side - Image */}
           <div className="relative">
             <img
-              className="w-full min-w-[400px]"
+              className="w-full lg:min-w-[400px]"
               alt="Agency founder"
               src="https://c.animaapp.com/mc1n4zn94AUOLo/img/rectangle-12.svg"
             />

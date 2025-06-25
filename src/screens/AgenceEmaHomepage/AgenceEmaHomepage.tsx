@@ -75,9 +75,9 @@ export const AgenceEmaHomepage = (): JSX.Element => {
           {/* Hero Section */}
           <section className="w-full relative">
               {/* Left side with CTA */}
-              <div className="mt-[10rem] p-12 w-full relative flex lg:flex-row flex-col gap-12 justify-between">
-              <div className="flex flex-col gap-12 w-full max-w-[30rem] bg-showcase pt-7">
-                <h1 className="text-6xl font-bold"> VOTRE <span className="bg-main-gradient !bg-clip-text text-transparent">MVP</span> EN MOINS DE 30 JOURS.</h1>
+              <div className="mt-[5rem] lg:mt-[10rem] p-12 w-full relative flex lg:flex-row flex-col gap-12 justify-between">
+              <div className="flex flex-col lg:items-start items-center gap-12 w-full lg:max-w-[30rem] bg-showcase lg:pt-7">
+                <h1 className="text-center lg:text-left text-5xl md:text-6xl font-bold"> VOTRE <span className="bg-main-gradient !bg-clip-text text-transparent">MVP</span> EN MOINS DE 30 JOURS.</h1>
                 <button className="bg-main-gradient py-2 w-fit text-lg font-bold rounded-2xl px-8 glow cursor-pointer hover:scale-105 transition-all">Échanger avec nous</button>
               </div>
 
@@ -86,7 +86,7 @@ export const AgenceEmaHomepage = (): JSX.Element => {
                 <div className="relative">
 
                   <img
-                    className="absolute w-[407px] h-[254px] top-[22rem] left-[-10%]"
+                    className="absolute w-[300px] md:w-[407px] aspect-[1.8] top-[36vw] md:top-[22rem] right-[0rem] lg:left-[-10%]"
                     alt="Vector"
                     src="https://c.animaapp.com/mc1n4zn94AUOLo/img/vector-3.svg"
                   />
@@ -95,11 +95,11 @@ export const AgenceEmaHomepage = (): JSX.Element => {
                     <CardContent className="p-0"></CardContent>
                   </Card>
 
-                  <div className="absolute w-[380px] h-[100px] top-[35rem] left-[-34%] flex">
+                  <div className="absolute w-[380px] h-[100px] top-[20rem] md:top-[35rem] left-[10vw] lg:left-[-34%] flex">
                    {aiTools.map((tool, index) => (
                     <img
                      key={index}
-                     className={`w-[70px] h-[70px] ${index !== 0 ? '-ml-6' : ''}`}
+                     className={`w-[40px] sm:w-[70px] aspect-square ${index !== 0 ? 'ml-[-0.8rem] md:ml-[-1.5rem]' : ''}`}
                      alt={tool.alt}
                      src={tool.src}
                     />
@@ -112,35 +112,34 @@ export const AgenceEmaHomepage = (): JSX.Element => {
           </section>
 
           {/* Reduce deployment time section */}
-          <section className="w-[80%] flex justify-center mt-[25rem] max-w-[1500px]">
-            <div className="relative w-full max-w-[1146px] py-16">
-              <h2 className="text-[2.5rem] font-black text-white text-center mb-[3rem]">
+          <section className="w-[80%] flex justify-center mt-[10rem] lg:mt-[25rem] max-w-[1500px]">
+            <div className="relative w-full max-w-[1146px] py-16 p-6">
+              <h2 className="text-[2rem] md:text-[2.5rem] font-black text-white text-center mb-[3rem]">
                 Réduisez vos temps de déploiement avec l&apos;ia.
               </h2>
 
               <div className="flex flex-col items-center">
                 <div className="flex">
                     <img
-                      className="w-[301px] h-[333px]"
+                      className="w-[200px] md:w-[301px] aspect-[0.9]"
                       alt="Vector"
                       src="https://c.animaapp.com/mc1n4zn94AUOLo/img/vector-2.svg"
                     />
                     <img
-                      className="w-[302px] h-[333px]"
+                      className="lg:block hidden w-[302px] aspect-[0.9]"
                       alt="Vector"
                       src="https://c.animaapp.com/mc1n4zn94AUOLo/img/vector-1.svg"
                     />
                     </div>
-                  <div className="flex w-full justify-around gap-6">
+                  <div className="flex w-full lg:flex-row flex-col lg:justify-around gap-6">
                   <img
-                    className="w-[462px] h-[330px] object-cover border border-amber-400 rounded-xl"
+                    className="w-[462px] aspect-[1.5] object-cover border border-amber-400 rounded-xl"
                     alt="Design"
                     src="https://c.animaapp.com/mc1n4zn94AUOLo/img/design-1.png"
                   />
-                  
 
                   <img
-                    className="w-[465px] h-[332px] object-cover border border-white rounded-xl"
+                    className="w-[465px] aspect-[1.5] object-cover border border-white rounded-xl"
                     alt="Dev"
                     src="https://c.animaapp.com/mc1n4zn94AUOLo/img/dev-1.png"
                   />

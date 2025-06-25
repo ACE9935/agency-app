@@ -70,7 +70,7 @@ export const TechnologyStackSection = (): JSX.Element => {
   ];
 
   return (
-    <section className="relative w-[80%] max-w-[1500px] p-16 flex flex-col">
+    <section className="relative w-[80%] max-w-[1500px] px-6 md:px-16 py-16 flex flex-col">
       <img
         className="absolute translate-y-[125%] translate-x-[-50%] top-0 left-0 w-[80px] h-[80px] object-cover"
         alt="Ia ema"
@@ -78,11 +78,11 @@ export const TechnologyStackSection = (): JSX.Element => {
       />
 
         <div className="flex flex-col gap-8">
-            <h2 className="mt-12 font-['Roboto',Helvetica] font-black text-white text-[2.5rem]">
+            <h2 className="mt-12 text-center md:text-left w-full font-['Roboto',Helvetica] font-black text-white text-[2.5rem]">
               Notre stack technique
             </h2>
-        <div className="bg-main-gradient-reverse p-[0.1rem] rounded-lg self-center">
-          <div className="flex bg-primary rounded-lg p-6 grid grid-cols-2 xl:grid-cols-3 gap-12">
+        <div className="bg-main-gradient-reverse p-[0.1rem] rounded-lg self-center w-full">
+          <div className="flex bg-primary rounded-lg p-6 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-12">
           {techCategories.map((category, index) => (
             <div
               key={index}

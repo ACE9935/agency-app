@@ -23,15 +23,15 @@ export const TeamSection = (): JSX.Element => {
   ];
 
   return (
-    <section className="relative w-[80%] max-w-[1500px] p-16 flex flex-col items-start">
+    <section className="relative w-[80%] max-w-[1500px] px-6 md:px-16 py-16 flex flex-col items-start">
         <img
           className="absolute translate-y-[125%] translate-x-[-50%] top-0 left-0 w-[80px] h-[80px] object-cover"
           alt="Ia ema"
           src="https://c.animaapp.com/mc1n4zn94AUOLo/img/ia---ema-2-5.png"
             />
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-4 md:gap-8">
           <div className="flex items-start gap-4">
-            <h2 className="mt-12 font-['Roboto',Helvetica] font-black text-white text-[2.5rem]">
+            <h2 className="mt-12 text-center md:text-left w-full font-['Roboto',Helvetica] font-black text-white text-[2.5rem]">
               L&apos;équipe
             </h2>
           </div>
@@ -42,7 +42,7 @@ export const TeamSection = (): JSX.Element => {
             pour resté compétitifs jour après jour !
           </p>
 
-          <div className="flex gap-4 mt-4">
+          <div className="flex gap-4 md:mt-4">
             {teamImages.map((image, index) => (
               <Card key={index} className="border-0 bg-transparent">
                 <CardContent className="p-0">

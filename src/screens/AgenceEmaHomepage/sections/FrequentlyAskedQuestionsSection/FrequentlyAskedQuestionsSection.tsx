@@ -38,7 +38,7 @@ export const FrequentlyAskedQuestionsSection = (): JSX.Element => {
   ];
 
   return (
-    <section className="relative w-[80%] max-w-[1500px] p-16 flex flex-col">
+    <section className="relative w-[80%] max-w-[1500px] px-6 md:px-16 py-16 flex flex-col">
 
       <img
         className="absolute translate-y-[125%] translate-x-[-50%] top-0 left-0 w-[80px] h-[80px] object-cover"
@@ -49,7 +49,7 @@ export const FrequentlyAskedQuestionsSection = (): JSX.Element => {
               FAQ
             </h2>
 
-       <div className="flex justify-between pt-[8rem]">
+       <div className="flex lg:flex-row gap-4 flex-col justify-between pt-[5rem]">
         <img src="/question_mark.png" className="h-fit w-full max-w-[20rem]"/>
 
       {/* Right side with FAQ accordion */}
@@ -58,7 +58,7 @@ export const FrequentlyAskedQuestionsSection = (): JSX.Element => {
           type="single"
           collapsible
           defaultValue="item-0"
-          className="w-[600px]"
+          className="w-full lg:w-[600px]"
         >
           {faqItems.map((item, index) => (
             <div className="bg-main-gradient-reverse mb-6 rounded-xl p-[0.1rem]">

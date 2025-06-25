@@ -2,7 +2,7 @@ import React, { JSX } from "react";
 
 export const OurServicesSection = (): JSX.Element => {
   return (
-        <section className="relative w-[80%] max-w-[1500px] p-16 flex flex-col">
+        <section className="relative w-[80%] max-w-[1500px] px-6 md:px-16 py-16 flex flex-col">
             <img
               className="absolute translate-y-[125%] translate-x-[-50%] top-0 left-0 w-[80px] h-[80px] object-cover"
               alt="Ia ema"
@@ -10,7 +10,7 @@ export const OurServicesSection = (): JSX.Element => {
                 />
             <div className="flex flex-col gap-8">
               <div className="flex items-start gap-4">
-                <h2 className="mt-12 font-['Roboto',Helvetica] font-black text-white text-[2.5rem]">
+                <h2 className="mt-12 text-center md:text-left w-full font-['Roboto',Helvetica] font-black text-white text-[2.5rem]">
                   Notre service
                 </h2>
               </div>
