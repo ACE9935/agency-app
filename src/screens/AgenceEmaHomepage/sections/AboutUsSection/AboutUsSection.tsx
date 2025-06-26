@@ -20,7 +20,7 @@ export const AboutUsSection = (): JSX.Element => {
           src="https://c.animaapp.com/mc1n4zn94AUOLo/img/vector-3-1.svg"
         />
         <img
-          className="block lg:hidden w-[0.1rem] h-[254px] object-cover self-start ml-[199px]"
+          className="block lg:hidden w-[0.1rem] h-[254px] object-cover self-center"
           alt="Vector"
           src="Vector 3.png"
         />

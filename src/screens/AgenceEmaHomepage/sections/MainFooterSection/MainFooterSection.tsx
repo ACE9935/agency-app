@@ -19,7 +19,7 @@ export const MainFooterSection = (): JSX.Element => {
     <footer className="relative w-[80%] max-w-[1500px] px-6 md:px-16 py-16 flex flex-col">
 
       <img
-        className="absolute translate-y-[-53%] translate-x-[-50%] top-0 left-0 w-[80px] md:w-[120px] aspect-square object-cover"
+        className="absolute translate-y-[-53%] translate-x-[-50%] top-0 left-0 w-[60px] md:w-[80px] lg:w-[120px] aspect-square object-cover"
         alt="Ia ema"
         src="https://c.animaapp.com/mc1n4zn94AUOLo/img/ia---ema-2-5.png"
       />

@@ -1,12 +1,17 @@
-import { useState } from 'react'
-import { AgenceEmaHomepage } from './screens/AgenceEmaHomepage'
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { AgenceEmaHomepage } from './screens/AgenceEmaHomepage';
+import EventPlanning from './pages/EventPlanning';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <AgenceEmaHomepage/>
-  )
+    <Router>
+
+      <Routes>
+        <Route path="/" element={<AgenceEmaHomepage />} />
+        <Route path="/event-planning" element={<EventPlanning />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;

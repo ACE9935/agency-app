@@ -67,7 +67,7 @@ export const FrequentlyAskedQuestionsSection = (): JSX.Element => {
               value={`item-${index}`}
               className="bg-primary rounded-xl"
             >
-              <AccordionTrigger className="px-6 py-6 cursor-pointer font-['Roboto',Helvetica] font-black text-white text-2xl leading-[30px]">
+              <AccordionTrigger className="px-6 py-6 cursor-pointer font-['Roboto',Helvetica] font-black text-white text-xl md:text-2xl leading-[30px]">
                 {item.question}
               </AccordionTrigger>
               {item.answer && (

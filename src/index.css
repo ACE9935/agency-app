@@ -8,7 +8,7 @@
   color-scheme: light dark;
   color: white;
   background-color: #F9F9F9;
- 
+  overflow-x: hidden;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -22,6 +22,8 @@
   --color-gradient-two: #FFC125;
   --color-gradient-three:#00C3D9;
   --color-gradient-four:#F3631C;
+  --color-gradient-text-one:#fcba03;
+  --color-gradient-text-two: #fc4b05;
 }
 .glow{
   box-shadow: 0 0 12px var(--color-gradient-one);
@@ -31,6 +33,11 @@
 }
 .bg-main-gradient-reverse {
   background: linear-gradient(to bottom, var(--color-gradient-one), var(--color-gradient-two), var(--color-gradient-three), var(--color-gradient-four));
+}
+.gradient-text {
+  background: linear-gradient(90deg, var(--color-gradient-text-one), var(--color-gradient-text-two));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .height-basic{
   height: 8rem;

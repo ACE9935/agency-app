@@ -68,9 +68,22 @@ export const AgenceEmaHomepage = (): JSX.Element => {
     <div
       className="relative bg-[#191919] flex flex-col items-center"
     > 
-    <div className="absolute flex justify-center w-full h-full"><div className="max-w-[1500px] w-[80%] border-secondary border-l border-r"></div></div>
+    <div className="absolute flex justify-center w-full h-full"><div className="max-w-[1500px] w-[90%] sm:w-[80%] border-secondary border-l border-r"></div></div>
 
           <Border/>
+          {/* Glowing background elements - total 9 */}
+<div className="absolute top-0 left-0 w-40 h-40 bg-main-gradient rounded-full blur-[100px] opacity-90"></div>
+<div className="absolute z-[10] top-1/4 right-0 w-36 h-36 bg-main-gradient rounded-full blur-[90px] opacity-85"></div>
+<div className="absolute bottom-0 left-1/4 w-48 h-48 bg-main-gradient rounded-full blur-[120px] opacity-80"></div>
+
+<div className="absolute top-[60%] left-[10%] w-40 h-40 bg-main-gradient rounded-full blur-[90px] opacity-75"></div>
+<div className="absolute bottom-[20%] right-[15%] w-44 h-44 bg-main-gradient rounded-full blur-[100px] opacity-85"></div>
+<div className="absolute top-[85%] left-[70%] w-32 h-32 bg-main-gradient rounded-full blur-[80px] opacity-90"></div>
+
+<div className="absolute top-[15%] left-[40%] w-36 h-36 bg-main-gradient rounded-full blur-[100px] opacity-95"></div>
+<div className="absolute bottom-[40%] right-[30%] w-42 h-42 bg-main-gradient rounded-full blur-[110px] opacity-88"></div>
+<div className="absolute top-[75%] right-[5%] w-38 h-38 bg-main-gradient rounded-full blur-[90px] opacity-92"></div>
+
           
           {/* Hero Section */}
           <section className="w-full relative">
@@ -112,7 +125,7 @@ export const AgenceEmaHomepage = (): JSX.Element => {
           </section>
 
           {/* Reduce deployment time section */}
-          <section className="w-[80%] flex justify-center mt-[10rem] lg:mt-[25rem] max-w-[1500px]">
+          <section className="w-[90%] sm:w-[80%] flex justify-center mt-[10rem] lg:mt-[25rem] max-w-[1500px]">
             <div className="relative w-full max-w-[1146px] py-16 p-6">
               <h2 className="text-[2rem] md:text-[2.5rem] font-black text-white text-center mb-[3rem]">
                 Réduisez vos temps de déploiement avec l&apos;ia.
@@ -149,7 +162,7 @@ export const AgenceEmaHomepage = (): JSX.Element => {
           </section>
 
           {/* Client logos section */}
-          <section className="w-full flex justify-center mt-16 bg-showcase relative z-[5]">
+          <section className="w-full flex justify-center mt-16 bg-showcase relative z-[0]">
             <div className="relative w-full max-w-[1681px] py-16">
               <h2 className="text-[2.5rem] font-black text-white mb-16 text-center">
                 Ils nous font confiance
