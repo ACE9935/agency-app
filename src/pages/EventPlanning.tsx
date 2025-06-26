@@ -4,7 +4,7 @@ import { Border } from "../components/Index";
 
 const EventPlanning = () => {
   return (
-    <section className="relative bg-primary flex flex-col items-center">
+    <section className="relative min-h-screen bg-primary flex flex-col items-center">
         <div className="absolute flex justify-center w-full h-full"><div className="max-w-[1500px] w-[90%] sm:w-[80%] border-secondary border-l border-r"></div></div>
         <Border/>
       {/* Gradient background elements */}
