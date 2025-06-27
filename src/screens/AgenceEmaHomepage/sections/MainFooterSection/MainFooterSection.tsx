@@ -1,6 +1,5 @@
 import React, { JSX } from "react";
-import { Button } from "../../../../components/ui/button";
-import { Border } from "../../../../components/Index";
+import { useNavigate } from "react-router-dom";
 
 // Data for reusability
 const footerData = {
@@ -15,11 +14,12 @@ const footerData = {
 };
 
 export const MainFooterSection = (): JSX.Element => {
+  const navigate=useNavigate()
   return (
-    <footer className="relative w-[80%] max-w-[1500px] px-6 md:px-16 py-16 flex flex-col">
+    <footer className="relative w-[90%] sm:w-[80%] max-w-[1500px] px-6 md:px-16 py-16 flex flex-col">
 
       <img
-        className="absolute translate-y-[-53%] translate-x-[-50%] top-0 left-0 w-[60px] md:w-[80px] lg:w-[120px] aspect-square object-cover"
+        className="absolute translate-y-[-55%] sm:translate-y-[-53%] translate-x-[-50%] top-0 left-0 w-[60px] md:w-[80px] lg:w-[120px] aspect-square object-cover"
         alt="Ia ema"
         src="https://c.animaapp.com/mc1n4zn94AUOLo/img/ia---ema-2-5.png"
       />
@@ -36,7 +36,7 @@ export const MainFooterSection = (): JSX.Element => {
             {footerData.contactText}
           </p>
 
-          <button className="bg-main-gradient py-2 w-fit text-lg font-bold rounded-2xl px-8 glow cursor-pointer hover:scale-105 transition-all">Échanger avec nous</button>
+          <button onClick={()=>navigate("/contact")} className="bg-main-gradient py-2 w-fit text-lg font-bold rounded-2xl px-8 glow cursor-pointer hover:opacity-90 transition-all">Échanger avec nous</button>
         </div>
       </div>
     </footer>

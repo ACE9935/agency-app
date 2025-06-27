@@ -1,8 +1,9 @@
 import React, { JSX } from "react";
-import { Button } from "../../../../components/ui/button";
-import { Card, CardContent } from "../../../../components/ui/card";
+import { useNavigate } from "react-router-dom";
+
 
 export const AboutUsSection = (): JSX.Element => {
+  const navigate = useNavigate();
   const agencyStory = [
     "Après 5 années passées dans le Growth marketing, à accompagner des projets dans différents domaines j'ai eu l'occasion de manager des équipes de développement web à des fins marketing.",
     "Ces expériences m'ont toutes amenée à un constat :",
@@ -11,7 +12,7 @@ export const AboutUsSection = (): JSX.Element => {
   ];
 
   return (
-    <section className="relative px-6 md:px-16 py-16 flex justify-center w-[80%] max-w-[1500px]">
+    <section className="relative px-6 md:px-16 py-16 flex justify-center w-[90%] sm:w-[80%] max-w-[1500px]">
       <div className="w-full max-w-[1144px] flex flex-col items-end">
         {/* Vector graphic at the top */}
         <img
@@ -25,18 +26,18 @@ export const AboutUsSection = (): JSX.Element => {
           src="Vector 3.png"
         />
 
-        <div className="flex lg:flex-row flex-col w-full gap-[121px]">
+        <div className="flex lg:flex-row flex-col w-full gap-x-16 gap-y-8 justify-between">
           {/* Left side - Image */}
           <div className="relative">
             <img
-              className="w-full lg:min-w-[400px]"
+              className="w-full lg:min-w-[300px]"
               alt="Agency founder"
               src="https://c.animaapp.com/mc1n4zn94AUOLo/img/rectangle-12.svg"
             />
           </div>
 
           {/* Right side - Content */}
-          <div className="flex flex-col max-w-[619px]">
+          <div className="flex flex-col w-full">
             {/* Heading */}
             <h2 className="font-['Roboto',Helvetica] font-black text-[2.5rem] text-white mb-16">
               L&apos;histoire de l&apos;agence
@@ -50,7 +51,7 @@ export const AboutUsSection = (): JSX.Element => {
             </div>
 
             {/* CTA Button */}
-                    <button className="bg-main-gradient mt-8 py-2 w-fit text-xl font-bold rounded-2xl px-8 glow cursor-pointer hover:scale-105 transition-all">Échanger avec nous</button>
+              <button className="bg-main-gradient mt-8 py-2 w-fit text-xl font-bold rounded-2xl px-8 glow cursor-pointer hover:opacity-90 transition-all" onClick={()=>navigate("/contact")}>Échanger avec nous</button>
           </div>
         </div>
       </div>

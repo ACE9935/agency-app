@@ -70,15 +70,15 @@ export const TechnologyStackSection = (): JSX.Element => {
   ];
 
   return (
-    <section className="relative w-[80%] max-w-[1500px] px-6 md:px-16 py-16 flex flex-col">
+    <section className="relative w-[90%] sm:w-[80%] max-w-[1500px] px-6 md:px-16 py-16 flex flex-col">
       <img
-        className="absolute translate-y-[125%] translate-x-[-50%] top-0 left-0 w-[80px] h-[80px] object-cover"
+        className="absolute translate-y-[180%] md:translate-y-[125%] translate-x-[-50%] top-0 left-0 w-[60px] md:w-[80px] aspect-square object-cover"
         alt="Ia ema"
         src="https://c.animaapp.com/mc1n4zn94AUOLo/img/ia---ema-2-5.png"
       />
 
         <div className="flex flex-col gap-8">
-            <h2 className="mt-12 text-center md:text-left w-full font-['Roboto',Helvetica] font-black text-white text-[2.5rem]">
+            <h2 className="mt-12 px-4 w-full font-['Roboto',Helvetica] font-black text-white text-[2.5rem]">
               Notre stack technique
             </h2>
         <div className="bg-main-gradient-reverse p-[0.1rem] rounded-lg self-center w-full">
@@ -131,11 +131,16 @@ export const TechnologyStackSection = (): JSX.Element => {
         </div>
           </div>
 
-      <div className="flex ml-[12rem] 2xl:ml-[20rem]">
+      <div className="flex !self-center">
         <img
-          className="w-[301px] h-80"
+          className="w-[301px] h-80 mr-[16rem] lg:block hidden"
           alt="Vector graphic"
           src="https://c.animaapp.com/mc1n4zn94AUOLo/img/vector-2-1.svg"
+        />
+        <img
+          className="w-[0.1rem] h-80 lg:hidden block rotate-180"
+          alt="Vector graphic"
+          src="Vector 3.png"
         />
       </div>
       <h2 className="text-[2rem] font-['Roboto',Helvetica] font-black text-center">Notre technique au service des vos <span className="bg-linear-to-r from-gradient-one to-blue-500 bg-clip-text text-transparent">idées</span></h2>

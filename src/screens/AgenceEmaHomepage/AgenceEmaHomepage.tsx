@@ -10,8 +10,11 @@ import { ProjectsShowcaseSection } from "./sections/ProjectsShowcaseSection";
 import { TeamSection } from "./sections/TeamSection";
 import { TechnologyStackSection } from "./sections/TechnologyStackSection";
 import { Border } from "../../components/Index";
+import { useNavigate } from "react-router-dom";
 
 export const AgenceEmaHomepage = (): JSX.Element => {
+
+  const navigate = useNavigate();
   // Client logos data
   const clientLogos = [
     {
@@ -86,20 +89,20 @@ export const AgenceEmaHomepage = (): JSX.Element => {
 
           
           {/* Hero Section */}
-          <section className="w-full relative">
+          <section className="w-full relative max-w-[1500px]">
               {/* Left side with CTA */}
               <div className="mt-[5rem] lg:mt-[10rem] p-12 w-full relative flex lg:flex-row flex-col gap-12 justify-between">
               <div className="flex flex-col lg:items-start items-center gap-12 w-full lg:max-w-[30rem] bg-showcase lg:pt-7">
                 <h1 className="text-center lg:text-left text-5xl md:text-6xl font-bold"> VOTRE <span className="bg-main-gradient !bg-clip-text text-transparent">MVP</span> EN MOINS DE 30 JOURS.</h1>
-                <button className="bg-main-gradient py-2 w-fit text-lg font-bold rounded-2xl px-8 glow cursor-pointer hover:scale-105 transition-all">Échanger avec nous</button>
+                <button className="bg-main-gradient py-2 w-fit text-lg font-bold rounded-2xl px-8 glow cursor-pointer hover:opacity-90 transition-all" onClick={()=>navigate("/contact")}>Échanger avec nous</button>
               </div>
 
               {/* Right side with illustration */}
               <div className="relative">
-                <div className="relative">
+                <div className="flex flex-col lg:block relative">
 
                   <img
-                    className="absolute w-[300px] md:w-[407px] aspect-[1.8] top-[36vw] md:top-[22rem] right-[0rem] lg:left-[-10%]"
+                    className="absolute hidden lg:block w-[300px] md:w-[407px] aspect-[1.8] top-[36vw] md:top-[22rem] right-[0rem] lg:left-[-10%]"
                     alt="Vector"
                     src="https://c.animaapp.com/mc1n4zn94AUOLo/img/vector-3.svg"
                   />
@@ -107,8 +110,13 @@ export const AgenceEmaHomepage = (): JSX.Element => {
                   <Card className="relative w-full lg:w-[40rem] aspect-[1.8] bg-white rounded-[30px]">
                     <CardContent className="p-0"></CardContent>
                   </Card>
+                  <img
+                    className="block rotate-[180deg] lg:hidden w-[0.1rem] h-[200px] object-cover self-center"
+                   alt="Vector"
+                   src="Vector 3.png"
+                  />
 
-                  <div className="absolute w-[380px] h-[100px] top-[20rem] md:top-[35rem] left-[10vw] lg:left-[-34%] flex">
+                  <div className="lg:absolute self-center w-[380px] h-[100px] lg:top-[35rem] lg:left-[-34%] flex lg:justify-start justify-center">
                    {aiTools.map((tool, index) => (
                     <img
                      key={index}

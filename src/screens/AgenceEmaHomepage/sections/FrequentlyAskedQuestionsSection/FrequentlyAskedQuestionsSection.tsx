@@ -5,6 +5,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "../../../../components/ui/accordion";
+import Logo from "../../../../components/Logo";
 
 export const FrequentlyAskedQuestionsSection = (): JSX.Element => {
   // FAQ data for mapping
@@ -38,19 +39,19 @@ export const FrequentlyAskedQuestionsSection = (): JSX.Element => {
   ];
 
   return (
-    <section className="relative w-[80%] max-w-[1500px] px-6 md:px-16 py-16 flex flex-col">
+    <section className="relative w-[90%] sm:w-[80%] max-w-[1500px] px-6 md:px-16 py-16 flex flex-col">
 
       <img
-        className="absolute translate-y-[125%] translate-x-[-50%] top-0 left-0 w-[80px] h-[80px] object-cover"
+        className="absolute translate-y-[180%] md:translate-y-[125%] translate-x-[-50%] top-0 left-0 w-[60px] md:w-[80px] aspect-square object-cover"
         alt="Ia ema"
         src="https://c.animaapp.com/mc1n4zn94AUOLo/img/ia---ema-2-5.png"
       />
-            <h2 className="mt-12 font-['Roboto',Helvetica] font-black text-white text-[2.5rem]">
+            <h2 className="mt-12 px-4 flex items-center gap-4 w-full font-['Roboto',Helvetica] font-black text-white text-[2.5rem]">
               FAQ
             </h2>
 
-       <div className="flex lg:flex-row gap-4 flex-col justify-between pt-[5rem]">
-        <img src="/question_mark.png" className="h-fit w-full max-w-[20rem]"/>
+       <div className="flex lg:flex-row gap-6 flex-col justify-between pt-[5rem]">
+        <img src="/question_mark.png" className="h-fit w-full max-w-[20rem] self-center lg:self-start"/>
 
       {/* Right side with FAQ accordion */}
       <div className="">
@@ -58,7 +59,7 @@ export const FrequentlyAskedQuestionsSection = (): JSX.Element => {
           type="single"
           collapsible
           defaultValue="item-0"
-          className="w-full lg:w-[600px]"
+          className="w-full"
         >
           {faqItems.map((item, index) => (
             <div className="bg-main-gradient-reverse mb-6 rounded-xl p-[0.1rem]">

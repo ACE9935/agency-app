@@ -1,7 +1,8 @@
-function Logo({className}: {className: string}) {
+function Logo({width, className}: {width: string, className?:string}) {
     return ( 
         <img
-         className={`w-[120px] h-[120px] object-cover`}
+         className={`aspect-square object-cover ${className}`}
+         width={width}
          alt="Ia ema"
          src="https://c.animaapp.com/mc1n4zn94AUOLo/img/ia---ema-2-5.png"
         />
