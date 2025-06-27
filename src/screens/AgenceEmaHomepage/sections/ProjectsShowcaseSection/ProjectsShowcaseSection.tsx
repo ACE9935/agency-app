@@ -37,14 +37,14 @@ export const ProjectsShowcaseSection = (): JSX.Element => {
         <div className="flex flex-col mt-8 w-full max-w-[1000px]">
           <img className="w-[90%] md:w-[350px] self-center" src="/project-vector1.png"/>
           <div className="flex gap-6">
-          <img className="w-[550px] rounded-lg" src="/p1.png"/>
+          <img className="w-[550px] rounded-lg" src="/p2.png"/>
           <div className="bg-white rounded-full w-fit bg-main-gradient p-[0.1rem] h-fit md:block hidden">
             <div className="bg-white px-5 py-1 rounded-full"><span className="bg-main-gradient !bg-clip-text text-transparent text-2xl font-bold">WEB</span></div>
             </div>
           </div>
           <img className="w-[90%] md:w-[500px] self-center" src="/project-vector.png"/>
           <div className="self-end flex flex-row-reverse gap-3">
-          <img className="w-[550px] rounded-lg" src="/p2.png"/>
+          <img className="w-[550px] rounded-lg" src="/p1.png"/>
            <div className="bg-white rounded-full w-fit bg-main-gradient p-[0.1rem] h-fit md:block hidden">
             <div className="bg-white px-5 py-1 rounded-full"><span className="bg-main-gradient !bg-clip-text text-transparent text-2xl font-bold">SAAS</span></div>
             </div>
