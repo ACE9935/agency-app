@@ -117,7 +117,7 @@ const AvailabilityCalendar: React.FC<AvailabilityCalendarProps> = ({ onSlotSelec
   if (loading) {
     return (
       <div className="gradient-border">
-        <div className="rounded-xl p-6 relative z-10">
+        <div className="rounded-xl px-4 py-8 sm:p-8 relative z-10">
           <div className="mb-4">
             <h3 className="text-xl font-semibold text-white flex items-center gap-2 mb-2">
               <Calendar className="h-5 w-5 text-[#FF52D1]" />
@@ -135,7 +135,7 @@ const AvailabilityCalendar: React.FC<AvailabilityCalendarProps> = ({ onSlotSelec
 
   return (
     <div className="gradient-border">
-      <div className="rounded-xl p-6 relative z-10">
+      <div className="rounded-xl px-4 py-8 sm:p-8 relative z-10">
         <div className="mb-6">
           <h3 className="text-xl font-semibold text-white flex items-center gap-2 mb-2">
             <Calendar className="h-5 w-5 text-[#FF52D1]" />

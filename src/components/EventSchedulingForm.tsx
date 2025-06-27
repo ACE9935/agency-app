@@ -150,7 +150,7 @@ const EventSchedulingForm = () => {
         
         <div className="gradient-border">
          
-          <div className="rounded-xl p-8 relative">
+          <div className="rounded-xl px-4 py-8 sm:p-8 relative">
             <button
           onClick={handleBackToSelection}
           className="mb-6 flex items-center text-gray-300 hover:text-white cursor-pointer hover:underline"
@@ -161,7 +161,7 @@ const EventSchedulingForm = () => {
             
             <div className="space-y-6">
               {/* Meeting Summary */}
-              <div className="gradient-border">
+              <div>
                 <div className="rounded-lg relative">
                   <h3 className="font-semibold text-white mb-4 flex items-center gap-2">
                     <Calendar className="h-5 w-5 text-[#FF52D1]" />
@@ -321,9 +321,9 @@ const EventSchedulingForm = () => {
     const { date, time } = formatDateTime(selectedSlot!);
     
     return (
-      <div className="max-w-2xl mx-auto text-center p-6">
+      <div className="max-w-2xl mx-auto text-center">
         <div className="gradient-border">
-          <div className="rounded-xl relative">
+          <div className="rounded-xl relative px-4 py-8 sm:p-8">
             <div className="mb-8">
               <div className="w-20 h-20 bg-main-gradient rounded-full flex items-center justify-center mx-auto mb-6">
                 <CheckCircle className="h-10 w-10 text-white" />
@@ -360,7 +360,7 @@ const EventSchedulingForm = () => {
               </div>
             </div>
 
-            <div className="gradient-border mb-8">
+            <div className="mb-8">
               <div className="rounded-lg relative z-10">
                 <h3 className="font-semibold text-white mb-3">Besoin de modifications ou avez-vous des questions ?</h3>
                 <p className="text-gray-300 mb-4">

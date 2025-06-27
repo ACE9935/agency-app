@@ -28,6 +28,37 @@
 .glow{
   box-shadow: 0 0 12px var(--color-gradient-one);
 }
+.gradient-border {
+  position: relative;
+  border-radius: 1rem;
+  background: linear-gradient(
+    to bottom,
+    var(--color-gradient-one),
+    var(--color-gradient-two),
+    var(--color-gradient-three),
+    var(--color-gradient-four)
+  );
+  padding: 2px; /* This creates the "border" width */
+}
+
+.gradient-border::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  background: var(--color-primary);
+  border-radius: inherit;
+  z-index: 1;
+}
+
+/* Content goes in a child element with higher z-index */
+.gradient-border > * {
+  position: relative;
+  z-index: 2;
+}
+
 .bg-main-gradient {
   background: linear-gradient(to right, var(--color-gradient-one), var(--color-gradient-two), var(--color-gradient-three), var(--color-gradient-four));
 }
