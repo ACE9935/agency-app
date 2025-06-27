@@ -152,18 +152,22 @@ export const AgenceEmaHomepage = (): JSX.Element => {
                       src="https://c.animaapp.com/mc1n4zn94AUOLo/img/vector-1.svg"
                     />
                     </div>
-                  <div className="flex w-full lg:flex-row flex-col lg:justify-around gap-6">
-                  <img
-                    className="w-[462px] aspect-[1.5] object-cover border border-amber-400 rounded-xl"
+                  <div className="flex w-full lg:flex-row flex-col lg:justify-around gap-6 relative">
+                  <div>
+                    <img
+                    className="max-w-[462px] w-full aspect-[1.5] object-cover border border-amber-400 rounded-xl"
                     alt="Design"
                     src="https://c.animaapp.com/mc1n4zn94AUOLo/img/design-1.png"
                   />
+                  </div>
 
-                  <img
-                    className="w-[465px] aspect-[1.5] object-cover border border-white rounded-xl"
+                  <div>
+                   <img
+                    className="max-w-[465px] w-full aspect-[1.5] object-cover border border-white rounded-xl"
                     alt="Dev"
                     src="https://c.animaapp.com/mc1n4zn94AUOLo/img/dev-1.png"
                   />
+                  </div>
                   </div>
             </div>
             </div>
